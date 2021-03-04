@@ -1,8 +1,8 @@
 # Feedback analysis tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and also uses TypeScript.
-
-Use the [example feedback file](./feedback.xlsx) to for development.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and also uses TypeScript.\
+Use the [example feedback file](./feedback.xlsx) to for development.\
+Latest deployment of `main` branch is available at https://nhsuk-feedback-analysis-tool.netlify.app/.\
 
 ## Available Scripts
 
