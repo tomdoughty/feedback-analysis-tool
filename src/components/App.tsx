@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ChangeEvent } from 'react';
 import XLSX from 'xlsx';
 
 import Row from '../models/Row';
@@ -12,7 +12,7 @@ function App() {
   const [allRows, setAllRows] = useState<Row[]>([]);
   const [filteredRows, setFilteredRows] = useState<Row[]>([]);
 
-  function fileChange(event: React.ChangeEvent<HTMLInputElement>): void {
+  function fileChange(event: ChangeEvent<HTMLInputElement>): void {
     if (!event.target.files) return;
     const reader = new FileReader();
     reader.onload = (): void => {
@@ -25,7 +25,7 @@ function App() {
     reader.readAsBinaryString(event.target.files[0]);
   }
 
-  function filterChange(event: React.ChangeEvent<HTMLInputElement>): void {
+  function filterChange(event: ChangeEvent<HTMLInputElement>): void {
     const rows = allRows.filter((row) => row.url.includes(event.currentTarget.value));
     setFilteredRows(rows);
   }

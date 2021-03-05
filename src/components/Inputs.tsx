@@ -1,8 +1,10 @@
+import { ChangeEvent } from 'react';
+
 import Row from '../models/Row';
 
 type InputsProps = {
-  fileChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
-  filterChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+  fileChange: (e: ChangeEvent<HTMLInputElement>) => void,
+  filterChange: (e: ChangeEvent<HTMLInputElement>) => void,
   rows: Row[]
 }
 

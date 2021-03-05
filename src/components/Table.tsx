@@ -11,6 +11,9 @@ function Table({ rows }: TableProps) {
         <thead className="nhsuk-table__head">
           <tr role="row">
             <th role="columnheader" scope="col">
+              Date
+            </th>
+            <th role="columnheader" scope="col">
               URL
             </th>
             <th role="columnheader" scope="col">
@@ -24,6 +27,9 @@ function Table({ rows }: TableProps) {
         <tbody className="nhsuk-table__body">
           { rows.map((row, rowIndex) => (
             <tr role="row" className="nhsuk-table__row" key={`row${rowIndex}`}>
+                <td className="nhsuk-table__cell">
+                  { row.date }
+                </td>
                 <td className="nhsuk-table__cell">
                   { row.url }
                 </td>

@@ -1,12 +1,14 @@
 class Row {
+  date: string;
   url: string;
   satisfied: string;
   comments: string;
 
-  constructor(row: Row) {
-    this.url = row.url;
-    this.satisfied = row.satisfied.toString() || "n/a";
-    this.comments = row.comments || "n/a";
+  constructor(row: any) {
+    this.date = row.datetime
+    this.url = row.URL;
+    this.satisfied = row.Satisfied.toString() || "n/a";
+    this.comments = row.Comments || "n/a";
   }
 }
 
